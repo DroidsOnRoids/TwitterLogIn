@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e5Z-PU-RVU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Fqy-Hg-Wi8">
+            <objects>
+                <viewController id="e5Z-PU-RVU" customClass="LoginViewController" customModule="twittersdksample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Kk-UX-wRq"/>
+                        <viewControllerLayoutGuide type="bottom" id="rhA-Xc-73L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rNY-nY-kRN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterLogo" translatesAutoresizingMaskIntoConstraints="NO" id="nvj-vU-piS">
+                                <rect key="frame" x="225" y="52" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="K6V-pP-8Mt"/>
+                                    <constraint firstAttribute="width" constant="150" id="Zku-HQ-QG8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i28-w8-xQU" customClass="LoginButton" customModule="twittersdksample" customModuleProvider="target">
+                                <rect key="frame" x="20" y="539" width="560" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Jot-MM-48M"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="signInButtonAction:" destination="e5Z-PU-RVU" eventType="touchUpInside" id="Yz9-P6-0pi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TwitterSDK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OU-dl-pqU">
+                                <rect key="frame" x="20" y="250" width="560" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="pTg-mf-GCM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwX-7c-fUZ" customClass="LoginButton" customModule="twittersdksample" customModuleProvider="target">
+                                <rect key="frame" x="20" y="478" width="560" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="bM4-Fv-nkG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="signInWithoutParseControllerButtonAction:" destination="e5Z-PU-RVU" eventType="touchUpInside" id="645-yj-8Ja"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipb-Fb-Fkc">
+                                <rect key="frame" x="20" y="358" width="560" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gQx-mL-jhE">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="KDb-M3-qQJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="ddh-GN-qQ9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGt-bs-mBJ">
+                                <rect key="frame" x="20" y="394.5" width="560" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="logOutButtonAction:" destination="e5Z-PU-RVU" eventType="touchUpInside" id="uNo-x9-Ysy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gQx-mL-jhE" firstAttribute="centerX" secondItem="rNY-nY-kRN" secondAttribute="centerX" id="51e-qO-g9B"/>
+                            <constraint firstItem="gQx-mL-jhE" firstAttribute="centerY" secondItem="3OU-dl-pqU" secondAttribute="centerY" id="9Td-DO-ILI"/>
+                            <constraint firstItem="nvj-vU-piS" firstAttribute="leading" secondItem="rNY-nY-kRN" secondAttribute="leadingMargin" constant="205" id="9ey-eW-BqC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="GGt-bs-mBJ" secondAttribute="leading" id="CHF-Z7-XF8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="3OU-dl-pqU" secondAttribute="leading" id="FIW-5x-9Mr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3OU-dl-pqU" secondAttribute="trailing" id="GZN-PK-DIS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="i28-w8-xQU" secondAttribute="leading" id="HdC-5c-yw3"/>
+                            <constraint firstItem="ipb-Fb-Fkc" firstAttribute="top" secondItem="3OU-dl-pqU" secondAttribute="bottom" constant="8" id="ITR-8l-bKY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i28-w8-xQU" secondAttribute="trailing" id="Vw2-cF-YSe"/>
+                            <constraint firstItem="nvj-vU-piS" firstAttribute="centerX" secondItem="rNY-nY-kRN" secondAttribute="centerX" id="WOa-SO-ak5"/>
+                            <constraint firstItem="rhA-Xc-73L" firstAttribute="top" secondItem="i28-w8-xQU" secondAttribute="bottom" constant="16" id="ZIi-7f-EAw"/>
+                            <constraint firstItem="3OU-dl-pqU" firstAttribute="centerY" secondItem="rNY-nY-kRN" secondAttribute="centerY" id="fiN-t8-AEP"/>
+                            <constraint firstItem="ipb-Fb-Fkc" firstAttribute="leading" secondItem="rNY-nY-kRN" secondAttribute="leadingMargin" id="hHA-Ge-8E6"/>
+                            <constraint firstItem="GGt-bs-mBJ" firstAttribute="top" secondItem="ipb-Fb-Fkc" secondAttribute="bottom" constant="16" id="hLh-Hw-0No"/>
+                            <constraint firstItem="i28-w8-xQU" firstAttribute="top" secondItem="vwX-7c-fUZ" secondAttribute="bottom" constant="16" id="k0v-ON-N8D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vwX-7c-fUZ" secondAttribute="trailing" id="kuz-9N-INB"/>
+                            <constraint firstItem="nvj-vU-piS" firstAttribute="top" secondItem="2Kk-UX-wRq" secondAttribute="bottom" constant="32" id="o17-ZA-DBy"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="vwX-7c-fUZ" secondAttribute="leading" id="uvs-KD-Zvg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GGt-bs-mBJ" secondAttribute="trailing" id="vUY-OA-kIM"/>
+                            <constraint firstItem="3OU-dl-pqU" firstAttribute="centerX" secondItem="rNY-nY-kRN" secondAttribute="centerX" id="xrL-Ny-Cg4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ipb-Fb-Fkc" secondAttribute="trailing" id="z6L-g2-Oep"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9ey-eW-BqC"/>
+                                <exclude reference="xrL-Ny-Cg4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="gQx-mL-jhE" id="Ypz-fZ-fHR"/>
+                        <outlet property="logOutButton" destination="GGt-bs-mBJ" id="rbk-bD-9om"/>
+                        <outlet property="signInButton" destination="i28-w8-xQU" id="s22-cw-2sr"/>
+                        <outlet property="signInWithoutParseControllerButton" destination="vwX-7c-fUZ" id="dMg-Pq-Qt6"/>
+                        <outlet property="titleLabel" destination="3OU-dl-pqU" id="ABy-Ps-mVf"/>
+                        <outlet property="twitterLogoImageView" destination="nvj-vU-piS" id="M46-tu-FqE"/>
+                        <outlet property="welcomeLabel" destination="ipb-Fb-Fkc" id="kJm-gc-GZj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUR-AU-4P3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="twitterLogo" width="150" height="150"/>
+    </resources>
+</document>
