@@ -16,3 +16,5 @@ So, with a few lines of code I have created complete login view like this:
 ```
 You can find complete description and alternative solution on
 [Droids On Roids Blog](http://www.thedroidsonroids.com/blog)
+
+Contact: opensource@droidsonroids.pl
